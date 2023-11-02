@@ -5,9 +5,12 @@
  */
 
 body {
-  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+  font-family: 'Cutive Mono', monospace;
   padding-top: 54px;
-  color: #868e96;
+  /* color: #868e96; */
+  color: #4c4949;
+  background: #dacdf3;
 }
 
 @media (min-width: 992px) {
@@ -23,7 +26,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
+  font-family: 'Cutive Mono', monospace;
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
@@ -41,6 +45,14 @@ h3 {
 h2 {
   font-size: 3.5rem;
   margin: 30px 0 50px;
+}
+
+.h3-u-text {
+  color: #5f3ca4;
+}
+
+.projectDiv {
+  margin: 10px 50px;
 }
 
 .my-auto {
@@ -193,17 +205,75 @@ section.resume-section .resume-item .resume-date {
 }
 
 .bg-primary {
-  background-color: #BD5D38 !important;
+  /* background-color: #BD5D38 !important; */
+
+  background-color: #5f3ca4 !important;
 }
 
 .text-primary {
-  color: #BD5D38 !important;
+  /* color: #BD5D38 !important; */
+  color: #5f3ca4 !important;
 }
 
 a {
-  color: #BD5D38;
+  /* color: #BD5D38; */
+  color: #5f3ca4;
 }
 
 a:hover, a:focus, a:active {
-  color: #824027;
+  color: #5f3ca4;
+}
+
+// For Youtube payer 
+section.youtube-section {
+  padding-top: 5rem !important;
+  padding-bottom: 5rem !important;
+  max-width: 100rem;
+  justify-content: center;
+}
+
+section.youtube-section .resume-item .resume-date {
+  min-width: none;
+}
+
+@media (min-width: 768px) {
+  section.youtube-section {
+    min-height: 100vh;
+  }
+  section.youtube-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
+
+@media (min-width: 992px) {
+  section.resume-section {
+    padding-top: 3rem !important;
+    padding-bottom: 3rem !important;
+  }
+}
+
+.custom-video-container {
+  border-radius: 25px; /* Add curved borders */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a shadow */
+  width: 600px; /* Set the desired width */
+  height: 400px; /* Set the desired height */
+}
+
+.btn.btn-click-animation {
+  transition: transform 0.2s ease;
+}
+
+.btn.btn-click-animation:hover {
+  transform: scale(1.1); /* You can adjust the scale factor as needed */
+}
+
+.card-hover-effect {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease;
+  z-index: 1; /* Start with a default z-index value */
+}
+
+.card-hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2; /* Increase the z-index on hover to bring the card to the front */
 }
