@@ -73,7 +73,7 @@
                 <br><br><br><br><br>
 
                 <h3>
-                    Completed Masters in Computer Science at Arizona State University and, 
+                    Completed Masters in Computer Science at Arizona State University and,
                 </h3>
                 <h3>
                     <u class="h3-u-text"> actively Seeking Full-time opportunities for 2023 </u>
@@ -238,7 +238,8 @@
                 <div class="row">
                     <div class="col-sm-0 p-0">
                         <a href="./pages/projects.html#feedback-app" style="text-decoration: none;">
-                            <div class="card card-color shadow border-secondary mb-0 h-70 card-hover-effect" style="width: 40rem;">
+                            <div class="card card-color shadow border-secondary mb-0 h-70 card-hover-effect"
+                                style="width: 40rem;">
                                 <img class="card-img-top" src="./other-img/feedback-app-pic.jpg" alt="Card image cap"
                                     style="width: 100%;">
                                 <div class="card-header text-center" style="background-color: white;">
@@ -249,10 +250,10 @@
                                     Worked on working my first React project to collect
                                     and manage feedback.
                                 </div>
-                                <div
+                                <!-- <div
                                     class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
                                     Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div>
+                                </div> -->
                             </div>
                         </a>
                         <a href="./pages/projects.html#house-marketplace-app" style="text-decoration: none;">
@@ -269,10 +270,10 @@
                                     rental or
                                     sale of residential properties
                                 </div>
-                                <div
+                                <!-- <div
                                     class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
                                     Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div>
+                                </div> -->
                             </div>
                         </a>
                     </div>
@@ -293,10 +294,10 @@
                                     context, and a
                                     reducer for state management.
                                 </div>
-                                <div
+                                <!-- <div
                                     class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
                                     Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div>
+                                </div> -->
                             </div>
                         </a>
                         <a href="./pages/projects.html#hand-gesture" style="text-decoration: none;">
@@ -309,10 +310,10 @@
                                     Built an application to improve communication medium for visually impaired people by
                                     recognizing their hand gestures.
                                 </div>
-                                <div
+                                <!-- <div
                                     class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
                                     Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div>
+                                </div> -->
                             </div>
                         </a>
                     </div>
@@ -534,19 +535,30 @@
 
         <hr class="m-0">
 
-        <section class="" id="gallery">
-            <!-- <div class="my-auto">
+        <section id="gallery">
+            <div class="container">
                 <h2 class="mb-5">Gallery</h2>
-                <a href="img/img-2.jpg" data-lightbox="mygallery" data-title="Mysore Palace">
-                    <img src="img/img-2.jpg" alt="Image" style="width:220px;height:200px;">
-                </a>
-            </div> -->
-
-            <div class="container my-auto">
-                <h2 class="mb-5">Gallery</h2>
-                <div class="row" id="gallery-container"></div>
+                <div id="carouselExampleControls" class="carousel slide carousel-item-container" data-ride="carousel">
+                    <div class="carousel-inner" id="carousel-inner">
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
             </div>
         </section>
+
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -559,31 +571,31 @@
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
 
-    <!-- genetating image for Gallery -->
     <script>
-        const galleryContainer = document.getElementById('gallery-container');
-        const numberOfImages = 41; // Set the total number of images
+        const numberOfImages = 41;
+        const carouselInner = document.getElementById('carousel-inner');
 
         for (let i = 1; i <= numberOfImages; i++) {
             const imageSrc = `img/img-${i}.jpg`;
             const imageTitle = `Image ${i}`;
-            const aElement = document.createElement('a');
-            aElement.href = imageSrc;
-            aElement.dataset.lightbox = 'mygallery';
+
+            const carouselItem = document.createElement('div');
+            carouselItem.classList.add('carousel-item');
+
+            if (i === 1) {
+                carouselItem.classList.add('active');
+            }
 
             const imgElement = document.createElement('img');
+            imgElement.classList.add('d-block');
+            imgElement.classList.add('w-50');
+            imgElement.classList.add('h-50');
+            imgElement.classList.add('mx-auto');
             imgElement.src = imageSrc;
             imgElement.alt = imageTitle;
-            imgElement.width = 220;
-            imgElement.height = 200;
 
-            aElement.appendChild(imgElement);
-
-            const colDiv = document.createElement('div');
-            colDiv.classList.add('col-md-3', 'col-sm-6', 'col-12', 'mb-4');
-            colDiv.appendChild(aElement);
-
-            galleryContainer.appendChild(colDiv);
+            carouselItem.appendChild(imgElement);
+            carouselInner.appendChild(carouselItem);
         }
     </script>
 </body>
