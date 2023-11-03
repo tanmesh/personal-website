@@ -293,3 +293,16 @@ section.youtube-section .resume-item .resume-date {
   display: flex;
   justify-content: center;
 }
+
+.carousel-control-prev {
+  left: 1;
+}
+
+.carousel-control-next {
+  right: 4;
+}
+
+.carousel-div {
+  width: 1100px;
+  height: 600px;
+}

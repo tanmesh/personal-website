@@ -58,7 +58,7 @@
 
                 <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#certificates">Certificates</a></li>
 
-                <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li>
+                <!-- <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#gallery">Gallery</a></li> -->
             </ul>
         </div>
     </nav>
@@ -237,25 +237,6 @@
                 <h2 class="mb-5">Projects</h2>
                 <div class="row">
                     <div>
-                        <a href="./pages/projects.html#feedback-app" style="text-decoration: none;">
-                            <div class="card card-color shadow border-secondary mb-0 h-70 card-hover-effect"
-                                style="width: 40rem;">
-                                <img class="card-img-top" src="./other-img/feedback-app-pic.jpg" alt="Card image cap"
-                                    style="width: 100%;">
-                                <div class="card-header text-center" style="background-color: white;">
-                                    <h5 class="card-title m-0">Feedback App</h5>
-                                </div>
-                                <div
-                                    class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
-                                    Worked on working my first React project to collect
-                                    and manage feedback.
-                                </div>
-                                <!-- <div
-                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
-                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div> -->
-                            </div>
-                        </a>
                         <a href="./pages/projects.html#house-marketplace-app" style="text-decoration: none;">
                             <div class="card shadow border-secondary mb-0 h-70 card-hover-effect" style="width: 40rem;">
                                 <img class="card-img-top" src="./other-img/house-marketplace-pic.jpg"
@@ -269,6 +250,25 @@
                                     Tailwind CSS. It serves as a platform for streamlined property listing, whether for
                                     rental or
                                     sale of residential properties
+                                </div>
+                                <!-- <div
+                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
+                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
+                                </div> -->
+                            </div>
+                        </a>
+                        <a href="./pages/projects.html#feedback-app" style="text-decoration: none;">
+                            <div class="card card-color shadow border-secondary mb-0 h-70 card-hover-effect"
+                                style="width: 40rem;">
+                                <img class="card-img-top" src="./other-img/feedback-app-pic.jpg" alt="Card image cap"
+                                    style="width: 100%;">
+                                <div class="card-header text-center" style="background-color: white;">
+                                    <h5 class="card-title m-0">Feedback App</h5>
+                                </div>
+                                <div
+                                    class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
+                                    Worked on working my first React project to collect
+                                    and manage feedback.
                                 </div>
                                 <!-- <div
                                     class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
@@ -390,7 +390,7 @@
         <hr class="m-0">
 
         <section class="p-4 d-flex flex-column" id="skills&interests">
-            <div class="d-flex justify-content-end">
+            <div class="d-flex justify-content-sm-between justify-content-lg-around">
                 <div class="my-auto">
                     <h2 class="mb-5">Technical Skills</h2>
 
@@ -430,10 +430,6 @@
                         </li>
                         <li>
                             <i class="fa-li fa fa-check"></i>
-                            C/C++
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
                             Intellij
                         </li>
                         <li>
@@ -442,7 +438,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="">
+                <div class="my-auto">
                     <h2 class="mb-5">Interests</h2>
                     <li>
                         Distributed Systems
@@ -535,7 +531,7 @@
 
         <hr class="m-0">
 
-        <section class="p-5 d-flex flex-column"  id="gallery">
+        <!-- <section class="p-5 d-flex flex-column" id="gallery">
             <div class="container">
                 <h2 class="mb-5">Gallery</h2>
                 <div id="carouselExampleControls" class="carousel slide carousel-item-container" data-ride="carousel">
@@ -552,13 +548,12 @@
                 </div>
             </div>
         </section>
-
         <br>
         <br>
         <br>
         <br>
         <br>
-        <br>
+        <br> -->
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -587,10 +582,10 @@
             }
 
             const imgElement = document.createElement('img');
-            imgElement.classList.add('d-block');
-            imgElement.classList.add('w-50');
-            imgElement.classList.add('h-50');
-            imgElement.classList.add('mx-auto');
+            imgElement.classList.add('img-fluid');
+            imgElement.style.width = '1100px'; // Set the width to 400 pixels            
+            imgElement.style.height = '600px'; // Set the height to 300 pixels
+
             imgElement.src = imageSrc;
             imgElement.alt = imageTitle;
 
