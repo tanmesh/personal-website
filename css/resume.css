@@ -10,7 +10,8 @@ body {
   padding-top: 54px;
   /* color: #868e96; */
   color: #4c4949;
-  background: #dacdf3;
+  /* background: #dacdf3; */
+  background: #fceb83;
   width: 100%
 }
 
@@ -55,7 +56,7 @@ h2 {
 }
 
 .h3-u-text {
-  color: #5f3ca4;
+  color: #7041cc;
 }
 
 .projectDiv {
@@ -218,21 +219,21 @@ section.resume-section .resume-item .resume-date {
 .bg-primary {
   /* background-color: #BD5D38 !important; */
 
-  background-color: #5f3ca4 !important;
+  background-color: #7041cc !important;
 }
 
 .text-primary {
   /* color: #BD5D38 !important; */
-  color: #5f3ca4 !important;
+  color: #7041cc !important;
 }
 
 a {
   /* color: #BD5D38; */
-  color: #5f3ca4;
+  color: #7041cc;
 }
 
 a:hover, a:focus, a:active {
-  color: #5f3ca4;
+  color: #7041cc;
 }
 
 // For Youtube payer 
@@ -305,4 +306,137 @@ section.youtube-section .resume-item .resume-date {
 .carousel-div {
   width: 1100px;
   height: 600px;
+}
+
+.button-class-1 {
+  --width: 100px;
+  --height: 35px;
+  --tooltip-height: 35px;
+  --tooltip-width: 90px;
+  --gap-between-tooltip-to-button: 18px;
+  --button-color: #1163ff;
+  --tooltip-color: #fff;
+  width: var(--width);
+  height: var(--height);
+  background: var(--button-color);
+  position: relative;
+  text-align: center;
+  border-radius: 0.45em;
+  font-family: "Arial";
+  transition: background 0.3s;
+}
+
+.button-class-1::before {
+  position: absolute;
+  content: attr(data-tooltip);
+  width: var(--tooltip-width);
+  height: var(--tooltip-height);
+  background-color: var(--tooltip-color);
+  font-size: 0.9rem;
+  color: #111;
+  border-radius: .25em;
+  line-height: var(--tooltip-height);
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) + 10px);
+  left: calc(50% - var(--tooltip-width) / 2);
+}
+
+.button-class-1::after {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 10px solid transparent;
+  border-top-color: var(--tooltip-color);
+  left: calc(50% - 10px);
+  bottom: calc(100% + var(--gap-between-tooltip-to-button) - 10px);
+}
+
+.button-class-1::after,.button-class-1::before {
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.5s;
+}
+
+.text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button-wrapper,.text,.icon {
+  overflow: hidden;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  color: #fff;
+}
+
+.text {
+  top: 0
+}
+
+.text,.icon {
+  transition: top 0.5s;
+}
+
+.icon {
+  color: #fff;
+  top: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon svg {
+  width: 24px;
+  height: 24px;
+}
+
+.button-class-1:hover {
+  background: #6c18ff;
+}
+
+.button-class-1:hover .text {
+  top: -100%;
+}
+
+.button-class-1:hover .icon {
+  top: 0;
+}
+
+.button-class-1:hover:after {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button) - 20px);
+}
+
+.button-class-1:hover:before {
+  bottom: calc(var(--height) + var(--gap-between-tooltip-to-button));
+}
+
+.button-class-2 {
+  font-size: 12px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #000;
+  cursor: pointer;
+  border: 2px solid;
+  padding: 0.25em 0.5em;
+  box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px;
+  position: relative;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-class-2:active {
+  box-shadow: 0px 0px 0px 0px;
+  top: 5px;
+  left: 5px;
+}
+
+@media (min-width: 768px) {
+  .button-class-2 {
+    padding: 0.25em 0.75em;
+  }
 }
