@@ -406,3 +406,9 @@ section.youtube-section .resume-item .resume-date {
     padding: 0.25em 0.75em;
   }
 }
+
+.carousel-item {
+  width: 100%;
+  text-align: center;
+  background-color: black; /* Set the background color to black */
+}
