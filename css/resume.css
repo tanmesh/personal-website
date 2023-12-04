@@ -5,8 +5,8 @@
  */
 
 body {
-  /* font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Muli', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* font-family: 'Cutive Mono', monospace; */
   padding-top: 54px;
   /* color: #868e96; */
   color: #4c4949;
@@ -35,15 +35,15 @@ h3,
 h4,
 h5,
 h6 {
-  /* font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji'; */
-  font-family: 'Cutive Mono', monospace;
+  font-family: 'Saira Extra Condensed', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  /* font-family: 'Cutive Mono', monospace; */
   font-weight: 700;
   text-transform: uppercase;
   color: #343a40;
 }
 
 h1 {
-  font-size: 6rem;
+  font-size: 4rem;
   line-height: 5.5rem;
 }
 
@@ -188,8 +188,9 @@ section.resume-section .resume-item .resume-date {
 }
 
 .text-primary {
+  color: black !important;
   /* color: #BD5D38 !important; */
-  color: #7041cc !important;
+  /* color: #7041cc !important; */
 }
 
 a {
@@ -243,17 +244,6 @@ section.youtube-section .resume-item .resume-date {
 
 .btn.btn-click-animation:hover {
   transform: scale(1.1); /* You can adjust the scale factor as needed */
-}
-
-.card-hover-effect {
-  transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease;
-  z-index: 1; /* Start with a default z-index value */
-}
-
-.card-hover-effect:hover {
-  transform: scale(1.05);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 2; /* Increase the z-index on hover to bring the card to the front */
 }
 
 .carousel-item-container {
@@ -411,4 +401,46 @@ section.youtube-section .resume-item .resume-date {
   width: 100%;
   text-align: center;
   background-color: black; /* Set the background color to black */
+}
+
+.header-img{
+  height: 100%;
+  width: 100%;
+  background: url(https://source.unsplash.com/y3aP9oo9Pjc/500x500) left center;
+  background-size: 100%;
+  border-radius: inherit;
+  transition: all ease-in-out .4s;
+}
+/* 
+.card-hover-effect {
+  transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease;
+  z-index: 1;
+}
+
+.card-hover-effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+} */
+
+.card:hover .header-img{
+  transform: scale(1.25) rotate(2deg);
+}
+
+.card-header{
+  padding: 0px;
+  overflow: hidden;
+}
+
+.header-img{
+  height: 100%;
+  width: 100%;
+  background: url(https://source.unsplash.com/y3aP9oo9Pjc/500x500) left center;
+  background-size: 100%;
+  border-radius: inherit;
+  transition: all ease-in-out .4s;
+}
+
+.card:hover .header-img{
+  transform: scale(1.25) rotate(2deg);
 }
