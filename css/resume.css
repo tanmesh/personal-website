@@ -444,3 +444,15 @@ section.youtube-section .resume-item .resume-date {
 .card:hover .header-img{
   transform: scale(1.25) rotate(2deg);
 }
+
+.my-btn-outline-primary {
+  color: black;
+  background: white;
+  border-color: #7041CC;
+}
+
+.my-btn-outline-primary:hover {
+  color: white;
+  background: #7041CC;
+  border-color: #7041CC;
+}

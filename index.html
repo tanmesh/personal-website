@@ -29,6 +29,11 @@
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
+
+    
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
+    <script src="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.js"></script>
 </head>
 
 <body id="page-top">
@@ -157,13 +162,43 @@
 
                 <div class="resume-item d-flex flex-column flex-md-row mb-5">
                     <div class="resume-content mr-auto">
+                        <h3 class="mb-0"> SpotFood </h3>
+                        <div class="subheading mb-3"> Founder and Software Architect</div>
+                        <p>Conceptualised and designed social network for food which would simplify adding reviews and
+                            discovering food. Built the entire back-end from scratch with the following features:
+                        <ul>
+                            <li>Built the entire full-stack app from scratch using dropwizard framework, redis caching and
+                                mongodb
+                                database hosted on AWS.
+                            </li>
+                            <li>Implemented customized feed generation and search engine for finding
+                                foods/restaurants/users.
+                            </li>
+                            <li>Added complex features like authentication/authorization, auto-complete search and
+                                nearby
+                                location filtering.
+                            </li>
+                            <li>Working on Optimising search engine by using state-of-the-art Machine Learning
+                                Algorithms
+                                like Recommendation System.
+                            </li>
+                        </ul>
+                        </p>
+                    </div>
+                    <div class="resume-date text-md-right">
+                        <span class="text-primary">August 2023 - Ongoing</span>
+                    </div>
+                </div>
+
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
                         <h3 class="mb-0"> Arizona State University </h3>
                         <div class="subheading mb-3">Research Intern of <a
                                 href="https://scholar.google.com/citations?user=VI4vH9UAAAAJ&hl=en">Prof. Zhichao
                                 Cao</a></div>
                         <p>
                         <ul>
-                            <li>Currently, working on enhancing the read and write performance of InfluxDB</li>
+                            <li>Worked on enhancing the read and write performance of InfluxDB</li>
                             <li>Designed and analyzed different storage optimization solutions for Rocksandra in
                                 disaggregated storage environments.
                             </li>
@@ -175,7 +210,7 @@
                         </p>
                     </div>
                     <div class="resume-date text-md-right">
-                        <span class="text-primary">January 2022 - Present</span>
+                        <span class="text-primary">January 2023 - August 2023</span>
                     </div>
                 </div>
 
@@ -200,36 +235,6 @@
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">June 2022 - August 2022</span>
-                    </div>
-                </div>
-
-                <div class="resume-item d-flex flex-column flex-md-row mb-5">
-                    <div class="resume-content mr-auto">
-                        <h3 class="mb-0"> SpotFood </h3>
-                        <div class="subheading mb-3"> Founder and Software Architect</div>
-                        <p>Conceptualised and designed social network for food which would simplify adding reviews and
-                            discovering food. Built the entire back-end from scratch with the following features:
-                        <ul>
-                            <li>Built the entire back-end from scratch using dropwizard framework, redis caching and
-                                mongodb
-                                database hosted on AWS.
-                            </li>
-                            <li>Implemented customized feed generation and search engine for finding
-                                foods/restaurants/users.
-                            </li>
-                            <li>Added complex features like authentication/authorization, auto-complete search and
-                                nearby
-                                location filtering.
-                            </li>
-                            <li>Working on Optimising search engine by using state-of-the-art Machine Learning
-                                Algorithms
-                                like Recommendation System.
-                            </li>
-                        </ul>
-                        </p>
-                    </div>
-                    <div class="resume-date text-md-right">
-                        <span class="text-primary">August 2019 - August 2021</span>
                     </div>
                 </div>
 
@@ -264,7 +269,15 @@
 
         <section class="d-flex flex-column" id="projects">
             <div class="projectDiv">
-                <h2 class="mb-5">Projects</h2>
+                <h2 class="mb-2">Projects</h2>
+
+                <div class="row d-flex justify-content-center mt-100 mb-4">
+                    <div class="col-md-6">
+                        <select id="skillSelect" placeholder="Select skills to filter project" multiple>      
+                        </select>
+                    </div>
+                </div>
+
                 <div class="row" style="gap: 2rem;">
                     <a href="./pages/projects.html#house-marketplace-app" style="text-decoration: none;">
                         <div class="card shadow border-secondary mb-0 h-70 card-hover-effect" style="width: 20rem;">
@@ -274,20 +287,21 @@
                                         alt="Card image cap" style="width: 100%;">
                                 </div>
                             </div>
-                            <div class="card-header text-center" style="background-color: white;">
-                                <h4 class="card-title m-0">House Marketplace App</h4>
-                            </div>
                             <div
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
+
+                                <h4 class="card-title m-0">House Marketplace App</h4>
+
+                                <br />
+
                                 A Progressive Web App (PWA) designed and developed using React and
                                 Tailwind CSS. It serves as a platform for streamlined property listing, whether for
                                 rental or
                                 sale of residential properties
                             </div>
-                            <!-- <div
-                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
-                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div> -->
+                            <div class="card-footer text-primary bg-white">
+                                <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, Tailwind CSS 
+                            </div>
                         </div>
                     </a>
                     <a href="./pages/projects.html#feedback-app" style="text-decoration: none;">
@@ -299,18 +313,17 @@
                                         alt="Card image cap" style="width: 100%;">
                                 </div>
                             </div>
-                            <div class="card-header text-center" style="background-color: white;">
-                                <h4 class="card-title m-0">Feedback App</h4>
-                            </div>
                             <div
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
-                                Worked on working my first React project to collect
-                                and manage feedback.
+                                <h4 class="card-title m-0">Feedback App</h4>
+
+                                <br />
+
+                                Worked on working my first React project to collect and manage feedback.
                             </div>
-                            <!-- <div
-                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
-                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div> -->
+                            <div class="card-footer text-primary bg-white">
+                                <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, CSS
+                            </div>
                         </div>
                     </a>
                     <a href="./pages/projects.html#github-finder-app" style="text-decoration: none;">
@@ -321,22 +334,21 @@
                                         alt="Card image cap" style="width: 100%;">
                                 </div>
                             </div>
-                            <div class="card-header text-center" style="background-color: white;">
-                                <h4 class="card-title m-0">Github Finder App</h4>
-                            </div>
                             <div
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
+
+                                <h4 class="card-title m-0">Github Finder App</h4>
+
+                                <br />
+
                                 It offers essential functionalities for searching and viewing information from
                                 GitHub profiles, including recent repositories. The application leverages GitHub
-                                APIs for
-                                accessing user data and incorporates advanced features like state and effect hooks,
-                                context, and a
-                                reducer for state management.
+                                APIs for accessing user data and incorporates advanced features like state and effect hooks,
+                                context, and a reducer for state management.
                             </div>
-                            <!-- <div
-                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
-                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div> -->
+                            <div class="card-footer text-primary bg-white">
+                                <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, CSS
+                            </div>
                         </div>
                     </a>
                     <a href="./pages/projects.html#hand-gesture" style="text-decoration: none;">
@@ -347,18 +359,18 @@
                                         style="width: 20rem;">
                                 </div>
                             </div>
-                            <div class="card-header text-center" style="background-color: white;">
-                                <h4 class="card-title m-0 p-0">Hand Recognition Project</h4>
-                            </div>
                             <div
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
+                                <h4 class="card-title m-0 p-0">Hand Recognition Project</h4>
+
+                                <br />
+
                                 Built an application to improve communication medium for visually impaired people by
                                 recognizing their hand gestures.
                             </div>
-                            <!-- <div
-                                    class="card-footer text-primary d-flex flex-column align-items-center card-text text-center bg-white">
-                                    Skills: Python, OpenCV, CNN, Keras, Tensorflow
-                                </div> -->
+                            <div class="card-footer text-primary bg-white">
+                                <h5 class="card-text m-0">Skill: </h5> Python, OpenCV, CNN, Keras, Tensorflow
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -645,6 +657,84 @@
             carouselInner.appendChild(carouselItem);
         }
     </script>
+
+    <!-- Custom script to filter Project Cards based on selected skills -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const skillSelect = document.getElementById("skillSelect");
+            const projectCards = document.querySelectorAll(".card");
+
+            // Function to toggle the display of project cards based on the selected skill
+            function filterProjects() {
+                const selectedSkill = skillSelect.value;
+
+                projectCards.forEach((card) => {
+                    const cardSkills = card.querySelector(".card-footer").innerText;
+                    const displayCard = selectedSkill === "All" || cardSkills.includes(selectedSkill);
+                    card.style.display = displayCard ? "block" : "none";
+                });
+            }
+
+            // Event listener to trigger filtering when the skill selection changes
+            skillSelect.addEventListener("change", filterProjects);
+
+            // Initial filtering on page load
+            filterProjects();
+        });
+    </script>
+
+    <!-- Custon script to extract all skills from the Card -->
+    <script>
+        // Function to extract and display all unique skills
+        function extractSkills() {
+            const projects = document.querySelectorAll('.card');
+            const skillsSet = new Set();
+
+            projects.forEach(project => {
+                const cardFooter = project.querySelector('.card-footer');
+                if (cardFooter) {
+                    const footerChildren = Array.from(cardFooter.childNodes);
+                    const skillTexts = footerChildren
+                        .filter(child => child.nodeName !== 'H5') // Exclude skill elements within <h5> tag
+                        .map(child => child.textContent.trim());
+
+                    const skills = skillTexts.join(',').split(',').map(skill => skill.trim());
+                    skills.forEach(skill => skillsSet.add(skill));
+                }
+            });
+
+            return Array.from(skillsSet);
+        }
+
+        // Function to display extracted skills in the dropdown
+        function displaySkillsDropdown() {
+            const skills = extractSkills();
+            const skillSelect = document.getElementById('skillSelect');
+
+            if (skills.length > 0) {
+                skills.forEach(skill => {
+                    const option = document.createElement('option');
+                    option.value = skill;
+                    option.textContent = skill;
+                    skillSelect.appendChild(option);
+                });
+            } else {
+                skillSelect.textContent = 'No skills found';
+            }
+        }
+
+        // Call the function to display extracted skills in the dropdown
+        displaySkillsDropdown();
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var multipleCancelButton = new Choices('#skillSelect', {
+                removeItemButton: true,
+            });
+        });
+    </script>
+
 </body>
 
 </html>
