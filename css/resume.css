@@ -413,7 +413,7 @@ section.youtube-section .resume-item .resume-date {
 }
 
 .custom-shadow {
-  box-shadow: 0px 4px 6px rgba(112,65,204, 0.6);
+  box-shadow: 0px 4px 20px rgba(112,65,204, 0.6);
 }
 
 /* .card-hover-effect {
