@@ -411,15 +411,19 @@ section.youtube-section .resume-item .resume-date {
   border-radius: inherit;
   transition: all ease-in-out .4s;
 }
-/* 
-.card-hover-effect {
+
+.custom-shadow {
+  box-shadow: 0px 4px 6px rgba(112,65,204, 0.6);
+}
+
+/* .card-hover-effect {
   transition: transform 0.2s ease, box-shadow 0.2s ease, z-index 0.2s ease;
   z-index: 1;
 }
 
 .card-hover-effect:hover {
   transform: scale(1.05);
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px rgba(128, 0, 128, 6); 
   z-index: 2;
 } */
 
@@ -446,13 +450,23 @@ section.youtube-section .resume-item .resume-date {
 }
 
 .my-btn-outline-primary {
-  color: black;
+  color: #4c4949;
   background: white;
-  border-color: #7041CC;
+  /* border-color: #7041CC; */
 }
 
 .my-btn-outline-primary:hover {
   color: white;
   background: #7041CC;
-  border-color: #7041CC;
+  /* border-color: #7041CC; */
+}
+
+.certificate-image {
+  width: 220px;
+  height: 200px;
+  transition: transform 0.3s ease-in-out; /* Adding a smooth transition effect */
+}
+
+.certificate-image:hover {
+  transform: scale(1.1); /* Increasing the image size slightly on hover */
 }
