@@ -464,13 +464,15 @@ section.youtube-section .resume-item .resume-date {
 .my-btn-outline-primary {
   color: #4c4949;
   background: white;
-  /* border-color: #7041CC; */
+  border-color: #7041CC;
+  border-width: 1px;
+  padding: 0.3%;
 }
 
 .my-btn-outline-primary:hover {
   color: white;
   background: #7041cc;
-  /* border-color: #7041CC; */
+  border-color: #7041CC;
 }
 
 .certificate-image {
