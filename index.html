@@ -8,10 +8,6 @@
     <meta name="author" content="">
 
     <title>tanmesh's portfolio</title>
-    <!-- <link rel="apple-touch-icon" sizes="180x180" href="faicons/apple-touch-icon.png"> -->
-    <!-- <link rel="icon" type="image/png" sizes="32x32" href="faicons/favicon-32x32.png"> -->
-    <!-- <link rel="icon" type="image/png" sizes="16x16" href="faicons/favicon-16x16.png"> -->
-    <!-- <link rel="manifest" href="/site.webmanifest"> -->
 
     <!-- Bootstrap core CSS -->
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -423,21 +419,11 @@
         <section class="d-flex flex-column" id="projects">
             <div class="projectDiv">
                 <h2 class="mb-2">Projects</h2>
-
-                <!-- <div class="row d-flex justify-content-center mt-100 mb-4">
-                    <div class="col-md-6">
-                        <select id="skillSelect" placeholder="Select skills to filter project" multiple> </select>
-                    </div>
-                    <button class="input-button">
-                        <i class="fa-solid fa-magnifying-glass"></i>
-                    </button>
-                </div> -->
-
                 <div style="display: flex; justify-self: center;">
                     <div class="search-box">
                         <div class="row">
                             <input type="text" id="input-box" placeholder="Select skills to filter project"
-                                autocomplete="false">
+                                autocomplete="false" class="input-box2">
                             <button class="input-button">
                                 <i class="fa-solid fa-magnifying-glass"></i>
                             </button>
@@ -448,7 +434,7 @@
 
                 <br />
 
-                <div class="row" style="gap: 2rem;">
+                <div class="row" style="justify-content: center; gap: 3rem;">
                     <a href="./pages/projects.html#support-desk-app" style="text-decoration: none;" class="cardWrapper">
                         <div class="card_" style="width: 20rem;">
                             <div class="card-header">
@@ -471,7 +457,7 @@
                                 JavaScript,
                                 HTML, CSS, Redux, JWT Authentication
                             </div>
-                            
+
                         </div>
                     </a>
                     <a href="./pages/projects.html#house-marketplace-app" style="text-decoration: none;"
@@ -519,7 +505,7 @@
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0 d-inline">Skill: </h5> React, JavaScript, HTML, CSS
                             </div>
-                            
+
                         </div>
                     </a>
                     <a href="./pages/projects.html#github-finder-app" style="text-decoration: none;"
@@ -547,7 +533,7 @@
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0 d-inline">Skill: </h5> React, JavaScript, HTML, CSS
                             </div>
-                            
+
                         </div>
                     </a>
                     <a href="./pages/projects.html#hand-gesture" style="text-decoration: none;" class="cardWrapper">
@@ -570,7 +556,7 @@
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0 d-inline">Skill: </h5> Python, OpenCV, CNN, Keras, Tensorflow
                             </div>
-                            
+
                         </div>
                     </a>
                 </div>
@@ -591,12 +577,16 @@
                         <h3 class="mb-0">Arizona State University, Tempe, United States</h3>
                         <div class="subheading mb-3">Masters of Computer Science</div>
                         <div>Computer Science</div>
-                        <!--                    <p>CGPA: 8.14</p>-->
-                        <p>Relevant Courses : Foundations of Algorithms,
-                            Mobile Computing,
-                            Distributed Software Development,
-                            Database Management System Implementation,
-                            Software Integration and Engineering</p>
+                        <br />
+                        <p>Relevant Courses:
+                        <ul>
+                            <li>Foundations of Algorithms</li>
+                            <li>Mobile Computing</li>
+                            <li>Distributed Software Development</li>
+                            <li>Database Management System Implementation</li>
+                            <li>Software Integration and Engineering</li>
+                        </ul>
+                        </p>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">August 2021 - August 2023</span>
@@ -608,13 +598,17 @@
                         <h3 class="mb-0">The National Institute Of Engineering, Mysuru, India</h3>
                         <div class="subheading mb-3">Bachelor of Engineering</div>
                         <div>Information Science and Technology</div>
-                        <p>Relevant Courses : Algorithms and Data Structures,
-                            Operating Systems,
-                            Database Management Systems,
-                            Intro to Machine Learning,
-                            Data Analytics,
-                            Java Programming</p>
-                        <p>CGPA: 8.14</p>
+                        <br />
+                        <div>Relevant Courses:
+                            <ul>
+                                <li>Algorithms and Data Structures</li>
+                                <li>Operating Systems</li>
+                                <li>Database Management Systems</li>
+                                <li>Intro to Machine Learning</li>
+                                <li>Data Analytics</li>
+                                <li>Java Programming</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="resume-date text-md-right">
                         <span class="text-primary">August 2016 - April 2020</span>
@@ -652,50 +646,9 @@
             <div class="d-flex justify-content-sm-between justify-content-lg-around">
                 <div class="my-auto">
                     <h2 class="mb-5">Technical Skills</h2>
+                    <div id="progressContainer">
 
-                    <div class="subheading mb-3"></div>
-                    <ul class="fa-ul mb-0">
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            C/C++
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Java
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Python
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            MySql
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            MongoDb
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Redis
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Dropwizard
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Git
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Intellij
-                        </li>
-                        <li>
-                            <i class="fa-li fa fa-check"></i>
-                            Maven
-                        </li>
-                    </ul>
+                    </div>
                 </div>
                 <div class="my-auto">
                     <h2 class="mb-5">Interests</h2>
@@ -880,6 +833,8 @@
     <script src="./js/mouseMovementInProject.js"></script>
 
     <script src="./js/mouseMovementInExp.js"></script>
+
+    <script src="./js/skills.js"></script>
 </body>
 
 </html>
