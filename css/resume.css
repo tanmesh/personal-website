@@ -452,7 +452,7 @@ section.youtube-section .resume-item .resume-date {
   background: url(https://source.unsplash.com/y3aP9oo9Pjc/500x500) left center;
   background-size: 100%;
   border-radius: inherit;
-  transition: all ease-in-out 0.4s;
+  /* transition: all ease-in-out 0.4s; */
 }
 
 .card:hover .header-img {
@@ -594,9 +594,9 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   }
 }
 
-.timeline_content:hover {
+/* .timeline_content:hover {
   animation: shake 1s ease-in-out;
-}
+} */
 
 ul.timeline-list li:before {
   position: absolute;
@@ -624,6 +624,12 @@ ul.timeline-list li:before {
   margin-bottom: 30px;
   border-radius: 5px;
   overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.timeline_content:hover {
+  transform-origin: center;
 }
 
 .card_ {
@@ -637,31 +643,6 @@ ul.timeline-list li:before {
 
 .card_:hover {
   transform-origin: center;
-}
-
-.card_:hover {
-  animation: shake 1s ease-in-out;
-}
-
-/* .card_ {
-  display: block;
-  transition: opacity 0.3s ease; 
-  opacity: 1;
-}
-
-.card_[style*="none"] {
-  opacity: 0; 
-} */
-
-
-
-@keyframes followCursor {
-  0% {
-    transform: translate(0, 0);
-  }
-  100% {
-    transform: translate(calc((var(--x) - 50%) * 0.05), calc((var(--y) - 50%) * 0.05));
-  }
 }
 
 .search-box {
@@ -729,58 +710,3 @@ input {
   left: -20%;
   top: -13%;
 }
-/* 
-.cardWrapper {
-  
-}
-
-.card {
-  width: 100%;
-  height: 100%;
-  border-radius: 18px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-  padding: 30px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  justify-content: flex-end;
-  font-size: 1.6rem;
-  font-family: poppins;
-  background-color: royalblue;
-  color: white;
-  position: relative;
-  overflow: hidden;
-}
-
-.cardWrapper * {
-  pointer-events: none;
-}
-.highlight {
-  position: absolute;
-  height: 400px;
-  width: 400px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.13);
-  filter: brightness(70%) blur(20px);
-  color: #333;
-  font-weight: bold;
-  left: -20%;
-  top: -13%;
-}
-.card__number {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 1rem;
-}
-.card__number--stars {
-  height: 2.4rem;
-}
-.card__name {
-  height: 100%;
-  font-size: 4rem;
-  margin-bottom: 10px;
-  align-self: flex-start;
-} */
