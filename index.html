@@ -29,7 +29,7 @@
     <link rel="stylesheet" type="text/css" href="css/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="js/lightbox-plus-jquery.min.js"></script>
-
+    <script src="https://kit.fontawesome.com/6eb4b2932a.js" crossorigin="anonymous"></script>
 
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/bbbootstrap/libraries@main/choices.min.css">
@@ -37,7 +37,8 @@
 </head>
 
 <body id="page-top">
-    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"
+        style="background: linear-gradient(to bottom, #5d00ff, #8338fa7d);">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Tanmesh Mishra</span>
             <span class="d-none d-lg-block">
@@ -90,15 +91,14 @@
 
                 <br>
 
-                <i> I have done 3 backend internships along with active open source contributions in Apache Pinot (OLAP
-                    datastore which powers low latency high throughput analytics applications).
-                    I am currently pursuing masters in computer science, focusing on distributed systems.
-                    In addition to that, I have built the entire full-stack app from scratch for Spotfood, a unique way
-                    to
-                    discover
-                    food.
-                    I am passionate about backend systems and distributed systems in general and looking to learn more
-                    in that field and create positive impact.
+                <i>
+                    High-impact backend/full-stack engineer with 1+ year of professional experience along with 2 backend
+                    internship experiences. I have recently completed a Masters in Computer Science and am currently
+                    working as a full-stack engineer at Pinhous. In addition to that, I am also building the full-stack
+                    app Spotfood, a unique way to discover food. I am passionate about backend systems and distributed
+                    systems in general, and I am looking to learn more in that field and create a positive impact. For
+                    this, I have made active open-source contributions to Apache Pinot (an OLAP datastore which powers
+                    low-latency high-throughput analytics applications).
                 </i>
 
                 <br><br><br><br><br>
@@ -255,10 +255,13 @@
                         </button>
                     </div>
                     <div class="modal-body">
-                        <p>Working as a full-stack engineer in building an application that provides a visual search technology to help homebuyers to find their right home faster. Specifically, 
+                        <p>Working as a full-stack engineer in building an application that provides a visual search
+                            technology to help homebuyers to find their right home faster. Specifically,
                         <ul>
-                            <li>Developed and implemented the entire iOS application using React Native, integrating efficient search functionality using Node.js and MySQL.</li>
-                            <li>Collaborated within a team of five, conducting weekly meetings to coordinate progress, address challenges, and ensure project alignment.</li>
+                            <li>Developed and implemented the entire iOS application using React Native, integrating
+                                efficient search functionality using Node.js and MySQL.</li>
+                            <li>Collaborated within a team of five, conducting weekly meetings to coordinate progress,
+                                address challenges, and ensure project alignment.</li>
                         </ul>
                         </p>
                     </div>
@@ -431,10 +434,25 @@
             <div class="projectDiv">
                 <h2 class="mb-2">Projects</h2>
 
-                <div class="row d-flex justify-content-center mt-100 mb-4">
+                <!-- <div class="row d-flex justify-content-center mt-100 mb-4">
                     <div class="col-md-6">
-                        <select id="skillSelect" placeholder="Select skills to filter project" multiple>
-                        </select>
+                        <select id="skillSelect" placeholder="Select skills to filter project" multiple> </select>
+                    </div>
+                    <button class="input-button">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div> -->
+
+                <div style="display: flex; justify-self: center;">
+                    <div class="search-box">
+                        <div class="row">
+                            <input type="text" id="input-box" placeholder="Select skills to filter project"
+                                autocomplete="false">
+                            <button class="input-button">
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <div class="result-box"></div>
                     </div>
                 </div>
 
@@ -442,12 +460,10 @@
 
                 <div class="row" style="gap: 2rem;">
                     <a href="./pages/projects.html#support-desk-app" style="text-decoration: none;">
-                        <div class="card custom-shadow border-secondary mb-0 h-70 card-hover-effect"
-                            style="width: 20rem;">
+                        <div class="card_" style="width: 20rem;">
                             <div class="card-header">
                                 <div class="header-img">
-                                    <img class="card-img-top" src="./other-img/support.jpg" alt="Card image cap"
-                                        style="width: 100%;">
+                                    <img class="card-img-top" src="./other-img/support.jpg" alt="Card image cap">
                                 </div>
                             </div>
                             <div
@@ -455,10 +471,10 @@
 
                                 <h4 class="card-title m-0">Support Desk App</h4>
 
-                                <br />
+                                <!-- <br />
 
                                 A comprehensive MERN stack application designed to facilitate support ticket management.
-                                It incorporates user authentication, ticket creation, updates, and notes functionality.
+                                It incorporates user authentication, ticket creation, updates, and notes functionality. -->
                             </div>
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0">Skill: </h5> React, Node.js, Express.js, MongoDB, JavaScript,
@@ -467,8 +483,7 @@
                         </div>
                     </a>
                     <a href="./pages/projects.html#house-marketplace-app" style="text-decoration: none;">
-                        <div class="card custom-shadow border-secondary mb-0 h-70 card-hover-effect"
-                            style="width: 20rem;">
+                        <div class="card_" style="width: 20rem;">
                             <div class="card-header">
                                 <div class="header-img">
                                     <img class="card-img-top" src="./other-img/house-marketplace-pic.jpg"
@@ -480,12 +495,12 @@
 
                                 <h4 class="card-title m-0">House Marketplace App</h4>
 
-                                <br />
+                                <!-- <br />
 
                                 A Progressive Web App (PWA) designed and developed using React and
                                 Tailwind CSS. It serves as a platform for streamlined property listing, whether for
                                 rental or
-                                sale of residential properties
+                                sale of residential properties -->
                             </div>
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, CSS
@@ -493,8 +508,7 @@
                         </div>
                     </a>
                     <a href="./pages/projects.html#feedback-app" style="text-decoration: none;">
-                        <div class="card custom-shadow border-secondary mb-0 h-70 card-hover-effect"
-                            style="width: 20rem;">
+                        <div class="card_" style="width: 20rem;">
                             <div class="card-header">
                                 <div class="header-img">
                                     <img class="card-img-top" src="./other-img/feedback-app-pic.jpg"
@@ -505,9 +519,9 @@
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
                                 <h4 class="card-title m-0">Feedback App</h4>
 
-                                <br />
+                                <!-- <br />
 
-                                Worked on working my first React project to collect and manage feedback.
+                                Worked on working my first React project to collect and manage feedback. -->
                             </div>
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, CSS
@@ -515,8 +529,7 @@
                         </div>
                     </a>
                     <a href="./pages/projects.html#github-finder-app" style="text-decoration: none;">
-                        <div class="card custom-shadow border-secondary mb-0 h-70 card-hover-effect"
-                            style="width: 20rem;">
+                        <div class="card_" style="width: 20rem;">
                             <div class="card-header">
                                 <div class="header-img">
                                     <img class="card-img-top" src="./other-img/github-finder-pic.jpg"
@@ -528,13 +541,13 @@
 
                                 <h4 class="card-title m-0">Github Finder App</h4>
 
-                                <br />
+                                <!-- <br />
 
                                 It offers essential functionalities for searching and viewing information from
                                 GitHub profiles, including recent repositories. The application leverages GitHub
                                 APIs for accessing user data and incorporates advanced features like state and effect
                                 hooks,
-                                context, and a reducer for state management.
+                                context, and a reducer for state management. -->
                             </div>
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0">Skill: </h5> React, JavaScript, HTML, CSS
@@ -542,8 +555,7 @@
                         </div>
                     </a>
                     <a href="./pages/projects.html#hand-gesture" style="text-decoration: none;">
-                        <div class="card custom-shadow border-secondary mb-0 h-70 card-hover-effect"
-                            style="width: 20rem;">
+                        <div class="card_" style="width: 20rem;">
                             <div class="card-header">
                                 <div class="header-img">
                                     <img class="card-img-top" src="./other-img/hand-gesture.png" alt="Card image cap"
@@ -554,16 +566,33 @@
                                 class="card-body text-primary d-flex flex-column align-items-center card-text text-center">
                                 <h4 class="card-title m-0 p-0">Hand Recognition Project</h4>
 
-                                <br />
+                                <!-- <br />
 
                                 Built an application to improve communication medium for visually impaired people by
-                                recognizing their hand gestures.
+                                recognizing their hand gestures. -->
                             </div>
                             <div class="card-footer text-primary bg-white">
                                 <h5 class="card-text m-0">Skill: </h5> Python, OpenCV, CNN, Keras, Tensorflow
                             </div>
                         </div>
                     </a>
+                    <!-- <a>
+                        <div class="cardWrapper">
+                            <div class="card">
+                                <div class="card__name">
+                                    <p>OBAID</p>
+                                </div>
+                                <div class="card__number">
+                                    <div class="card__number--stars">****</div>
+                                    <div class="card__number--stars">****</div>
+                                    <div class="card__number--stars">****</div>
+                                    <div>1234</div>
+                                </div>
+                                <div class="highlight"></div>
+                            </div>
+                        </div>
+                    </a>
+                     -->
                 </div>
             </div>
 
@@ -860,71 +889,7 @@
 
     <!-- Custom script to filter Project Cards based on selected skills -->
     <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const skillSelect = document.getElementById("skillSelect");
-            const projectCards = document.querySelectorAll(".card");
 
-            // Function to toggle the display of project cards based on the selected skill
-            function filterProjects() {
-                const selectedSkill = skillSelect.value;
-
-                projectCards.forEach((card) => {
-                    const cardSkills = card.querySelector(".card-footer").innerText;
-                    const displayCard = selectedSkill === "All" || cardSkills.includes(selectedSkill);
-                    card.style.display = displayCard ? "block" : "none";
-                });
-            }
-
-            // Event listener to trigger filtering when the skill selection changes
-            skillSelect.addEventListener("change", filterProjects);
-
-            // Initial filtering on page load
-            filterProjects();
-        });
-    </script>
-
-    <!-- Custon script to extract all skills from the Card -->
-    <script>
-        // Function to extract and display all unique skills
-        function extractSkills() {
-            const projects = document.querySelectorAll('.card');
-            const skillsSet = new Set();
-
-            projects.forEach(project => {
-                const cardFooter = project.querySelector('.card-footer');
-                if (cardFooter) {
-                    const footerChildren = Array.from(cardFooter.childNodes);
-                    const skillTexts = footerChildren
-                        .filter(child => child.nodeName !== 'H5') // Exclude skill elements within <h5> tag
-                        .map(child => child.textContent.trim());
-
-                    const skills = skillTexts.join(',').split(',').map(skill => skill.trim());
-                    skills.forEach(skill => skillsSet.add(skill));
-                }
-            });
-
-            return Array.from(skillsSet);
-        }
-
-        // Function to display extracted skills in the dropdown
-        function displaySkillsDropdown() {
-            const skills = extractSkills();
-            const skillSelect = document.getElementById('skillSelect');
-
-            if (skills.length > 0) {
-                skills.forEach(skill => {
-                    const option = document.createElement('option');
-                    option.value = skill;
-                    option.textContent = skill;
-                    skillSelect.appendChild(option);
-                });
-            } else {
-                skillSelect.textContent = 'No skills found';
-            }
-        }
-
-        // Call the function to display extracted skills in the dropdown
-        displaySkillsDropdown();
     </script>
 
     <script>
@@ -934,6 +899,10 @@
             });
         });
     </script>
+
+    <script src="./js/autocomplete.js"></script>
+
+    <script src="./js/mouse.js"></script>
 
 </body>
 
