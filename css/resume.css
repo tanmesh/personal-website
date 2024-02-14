@@ -576,6 +576,24 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
 }
 
 /* Added class with shake-on-hover */
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .timeline_content:hover {
   animation: shake 1s ease-in-out;
 }
@@ -622,7 +640,7 @@ ul.timeline-list li:before {
 }
 
 .card_:hover {
-  animation: followCursor 0.1s infinite linear;
+  animation: shake 1s ease-in-out;
 }
 
 /* .card_ {
