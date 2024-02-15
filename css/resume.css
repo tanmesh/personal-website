@@ -723,7 +723,7 @@ input {
 }
 
 .progress-bar {
-  background: linear-gradient(to right, #a69cb8, #4708bf);
+  background: #4708bf;
 }
 
 .progressWrapper {
