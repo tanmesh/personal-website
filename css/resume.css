@@ -594,10 +594,6 @@ ul.timeline-list li:nth-child(2n) .timeline_content {
   }
 }
 
-/* .timeline_content:hover {
-  animation: shake 1s ease-in-out;
-} */
-
 ul.timeline-list li:before {
   position: absolute;
   content: "";
@@ -723,7 +719,7 @@ input {
 }
 
 .progress-bar {
-  background: #4708bf;
+  background: #7041cc;
 }
 
 .progressWrapper {
