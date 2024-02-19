@@ -282,19 +282,20 @@ section.youtube-section .resume-item .resume-date {
 }
 
 .button-class-1 {
-  --width: 100px;
+  --width: 110px;
   --height: 35px;
   --tooltip-height: 35px;
   --tooltip-width: 90px;
   --gap-between-tooltip-to-button: 18px;
-  --button-color: #6c18ff;
+  /* --button-color: #6c18ff; */
+  --button-color: linear-gradient(to right, #7041cc, #0364ff);
   --tooltip-color: #fff;
   width: var(--width);
   height: var(--height);
   background: var(--button-color);
   position: relative;
   text-align: center;
-  border-radius: 0.45em;
+  border-radius: 1em;
   /* font-family: "Arial"; */
   font-family: 'Cutive Mono', monospace;
   transition: background 0.3s;
@@ -330,6 +331,11 @@ section.youtube-section .resume-item .resume-date {
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
+}
+
+.button-class-1:hover {
+  border-color: transparent;
+  box-shadow: 4px 4px 20px rgba(112, 65, 204, 0.8);
 }
 
 .text {
@@ -372,7 +378,8 @@ section.youtube-section .resume-item .resume-date {
 }
 
 .button-class-1:hover {
-  background: #6c18ff;
+  /* background: #6c18ff; */
+  background: linear-gradient(to right, #7041cc, #0364ff);
 }
 
 .button-class-1:hover .text {
@@ -716,7 +723,7 @@ input {
 }
 
 .progress {
-  width: 100%;
+  width: 30%;
   height: 20px;
   background-color: #f5f5f5;
   border-radius: 5px;
@@ -725,7 +732,8 @@ input {
 }
 
 .progress-bar {
-  background: linear-gradient(to right, #561CCC, #0364ff);
+  /* background: linear-gradient(to right, #561CCC, #0364ff); */
+  background: linear-gradient(to right, #7041cc, #0364ff);
 }
 
 .progressWrapper {
@@ -814,6 +822,6 @@ button {
 .my-btn-outline-primary:hover {
   color: white;
   border-color: transparent;
-  background: linear-gradient(to right, #9e6ffc, #5603ff, #0364ff);
+  background: linear-gradient(to right, #9e6ffc, #0364ff);
   box-shadow: 4px 4px 20px rgba(112, 65, 204, 0.8);
 }
