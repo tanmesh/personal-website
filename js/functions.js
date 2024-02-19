@@ -1,4 +1,4 @@
 
-function navigateToURL() {
-    window.location.href = './pages/projects.html#hand-gesture';
+function navigateToURL(url) {
+    window.open(url, '_blank');
 }
