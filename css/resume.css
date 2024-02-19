@@ -17,6 +17,19 @@ body {
   /* background: #fceb83; */
   background: #ffffff;
   width: 100%;
+  background-color: #fff;
+  background-image: radial-gradient(
+      at 21% 11%,
+      rgba(186, 186, 233, 0.53) 0,
+      transparent 50%
+    ),
+    radial-gradient(at 85% 0, hsla(46, 57%, 78%, 0.52) 0, transparent 50%),
+    radial-gradient(at 91% 36%, rgba(194, 213, 255, 0.68) 0, transparent 50%),
+    radial-gradient(at 8% 40%, rgba(251, 218, 239, 0.46) 0, transparent 50%);
+}
+
+.background-navbar {
+  background: linear-gradient(to right, #5d00ff, #7041cc);
 }
 
 @media (min-width: 992px) {
@@ -564,6 +577,7 @@ ul.timeline-list li .timeline_content {
   color: #333;
   padding: 30px;
   float: left;
+  background-color: white;
 }
 
 ul.timeline-list li:nth-child(2n) .timeline_content {
@@ -812,7 +826,7 @@ button {
 
 .my-btn-outline-primary {
   color: #4c4949;
-  background: white;
+  background: transparent;
   border-color: #561CCC;
   border-width: 1px;
   border-radius: 1em;
