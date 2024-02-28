@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css?family=Inconsolata:500,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="../vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+    <link href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../css/resume.min.css" rel="stylesheet">
@@ -30,7 +31,7 @@
 
 <body id="page-top">
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav"
-        style="background: linear-gradient(to bottom, #5d00ff, #8338fa7d);">
+        style="background: linear-gradient(to bottom, #5d00ff, #8338fa7d); text-wrap: balance;">
         <a class="navbar-brand js-scroll-trigger" href="#page-top">
             <span class="d-block d-lg-none">Tanmesh Mishra</span>
             <span class="d-none d-lg-block">
@@ -53,9 +54,9 @@
                                 d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L8 2.207l6.646 6.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5Z" />
                             <path d="m8 3.293 6 6V13.5a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 13.5V9.293l6-6Z" />
                         </svg> -->
-                        <svg height="20" width="20" id="Layer_1" style="enable-background:new 0 0 512 512;" fill="currentColor"
-                            version="1.1" viewBox="0 0 512 512" xml:space="preserve" xmlns="http://www.w3.org/2000/svg"
-                            xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <svg height="20" width="20" id="Layer_1" style="enable-background:new 0 0 512 512;"
+                            fill="currentColor" version="1.1" viewBox="0 0 512 512" xml:space="preserve"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                             <polygon
                                 points="352,128.4 319.7,96 160,256 160,256 160,256 319.7,416 352,383.6 224.7,256 " />
                         </svg>
@@ -64,31 +65,50 @@
                 </li>
 
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#support-desk-app">Support Desk App</a>
+                    <a class="nav-link js-scroll-trigger" href="#support-desk-app">Projects</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#house-marketplace-app">
-                        House Marketplace App
-                    </a>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#support-desk-app">Support Desk App</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#house-marketplace-app"> House Marketplace
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#github-finder-app"> Github Finder App </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#feedback-app">Feedback App</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#hand-gesture">Hand Gesture Recog</a>
+                        </li>
+                    </ul>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#github-finder-app">
-                        Github Finder App
-                    </a>
+                    <a class="nav-link js-scroll-trigger" href="#fictionlens">Hackathons</a>
                 </li>
-
                 <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#feedback-app">
-                        Feedback App
-                    </a>
-                </li>
-
-                <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" href="#hand-gesture">
-                        Hand Gesture Recog
-                    </a>
+                    <ul>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#fictionlens">FictionLens</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#creativeai">creative.ai</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#inlightlyai">inlightly.ai</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link js-scroll-trigger" href="#partifulai">partiful.ai</a>
+                        </li>
+                    </ul>
                 </li>
             </ul>
         </div>
@@ -376,6 +396,147 @@
                         <span class="text-primary">January 2020 - <br> May 2020</span>
                     </div>
                 </div>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="p-5 d-flex flex-column" id="fictionlens">
+            <div class="my-auto">
+                <h2 class="mb-5">FictionLens</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <p> I build Fiction Lens, a tool for fiction readers and writers to analyze stories by
+                            leveraging a chat interface to answer questions
+                            about dialogue, plot, and visualizations like story arcs. We used LlamaIndex to create
+                            indexes for our custom data and stored them in our vector database provided by Astra DB by
+                            DataStax.
+
+                            Here are few of the learnings from the development journey of building Fiction Lens:
+                        <ul>
+                            <li>Played with LlamaIndex for the first time. LlamaIndex leverages retrieval-augmented
+                                generation (RAG) to build specialized inverted indexes optimized for vector similarity
+                                search, enabling efficient lookups for custom data sources like paragraphs from the
+                                novel indexed in our vector database.
+                            </li>
+                            <li>Played with vector database Astra DB for the first time. It is used for storing and
+                                querying the inverted indexes created by LlamaIndex, enabling fast similarity searches
+                                to power real-time responses in our generative AI application.
+                            </li>
+                            <li>Working on a tight schedule during the hackathon taught me the importance of efficient
+                                time management. It was crucial to prioritize tasks and allocate time effectively to
+                                meet deadlines and deliverables.
+                            </li>
+                        </ul>
+                        </p>
+                        Source code is available on
+                        <button class="btn my-btn-outline-primary btn-sm" role="button"
+                            onclick="navigateToURL('https://github.com/tralfamadude/fictionlens')">Github
+                        </button>
+                        </p>
+                    </div>
+                </div>
+                <figure class="snip1205 gray">
+                    <img class="linkedin-image" src="../hack/fictionlens-linkedin.jpg" alt="tmp">
+                    <i class="ion-search"></i>
+                    <a
+                        onclick="navigateToURL('https://www.linkedin.com/posts/tanmesh_fiction-lens-activity-7161771552701706240-Mmbr/')"></a>
+                </figure>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="p-5 d-flex flex-column" id="creativeai">
+            <div class="my-auto">
+                <h2 class="mb-5">creative.ai</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <p> I built an innovative AI agent, creativ.ai, which aimed to streamline the process of
+                            generating
+                            personalized content, particularly targeting founders, influencers, and individuals who seek
+                            to minimize the time spent on crafting social media posts.
+
+                            With a tight three-hour deadline, I managed to create a fully functional prototype.
+                            Leveraging the cutting-edge technologies of GPT-4 and DALL·E 2, integrated within our React
+                            backend, we engineered a solution that exceeded our expectations.
+                        </p>
+                    </div>
+                </div>
+                <figure class="snip1205 gray">
+                    <img class="linkedin-image" src="../hack/creativ_ai-linkedin.jpg" alt="tmp">
+                    <i class="ion-search"></i>
+                    <a
+                        onclick="navigateToURL('https://www.linkedin.com/posts/tanmesh_last-saturday-i-had-the-opportunity-to-participate-activity-7163721951822241793-9xeb/')"></a>
+                </figure>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="p-5 d-flex flex-column" id="inlightlyai">
+            <div class="my-auto">
+                <h2 class="mb-5">inlightly.ai</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <p> I built an innovative AI agent called Insightly.ai, which is an intelligent tool aimed
+                            at helping developers and project managers pick the right dataset based on their
+                            requirements. It does this by allowing users to query the agent with specific questions to
+                            better understand the available data.
+
+                            With a tight deadline, we still managed to create a fully functional prototype. By
+                            leveraging cutting-edge GPT-4 technology integrated with a powerful Hex tool, we engineered
+                            a full functional solution.
+
+                            The key learning experience for me from this hackathon was discovering how to quickly ramp
+                            up on new tools like Hex to build projects under pressure. Hex integrates the best features
+                            of notebooks, and data platforms like Snowflake, MySql etc into one environment. This speeds
+                            up and improves data related work for teams - from exploration to productionisation.
+                        </p>
+                        Feel free to try out the
+                        <button class="btn my-btn-outline-primary btn-sm" role="button"
+                            onclick="navigateToURL('https://app.hex.tech/6b612509-5b02-4945-93b7-c193e313992a/app/d1545a02-8850-4ca2-91d2-5420979d0f13/latest')">Demo
+                        </button>
+                    </div>
+                </div>
+                <figure class="snip1205 gray">
+                    <img class="linkedin-image" src="../hack/inslightlyai-linkedin.jpg" alt="tmp">
+                    <i class="ion-search"></i>
+                    <a
+                        onclick="navigateToURL('https://www.linkedin.com/posts/tanmesh_another-saturday-another-hackathon-alongside-activity-7165071611111436289-fBsw/')"></a>
+                </figure>
+        </section>
+
+        <hr class="m-0">
+
+        <section class="p-5 d-flex flex-column" id="partifulai">
+            <div class="my-auto">
+                <h2 class="mb-5">partiful.ai</h2>
+                <div class="resume-item d-flex flex-column flex-md-row mb-5">
+                    <div class="resume-content mr-auto">
+                        <p> I built an AI agent called partiful.ai, which is an intelligent tool aimed at helping
+                            developers to get started with the hackathon by helping them to ask relevant questions about
+                            different new AI tools and how to integrate them for their use case. It does this by
+                            scraping official documents of the AI tools like Llama Index, Fireworks, etc and creating a
+                            RAG on it.
+
+                            With a tight deadline, I still managed to create a fully functional prototype. By
+                            leveraging cutting-edge GPT-4 technology integrated with a powerful Llama Index and
+                            Fireworks, we engineered a full functional solution. While the performance of the agent fell
+                            short of our expectations, I am confident that with future work, we can make significant
+                            improvements.
+
+                            One of the primary challenges in this project was integrating scraped data with its source
+                            to enhance credibility and provide users with access to the original documents. To tackle
+                            this, I first delved into how LlamaIndex utilizes Documents/Nodes to store data chunks.
+                            Then, I modified the existing logic to incorporate storing the source link as metadata
+                            within the Document.
+                        </p>
+                    </div>
+                </div>
+                <figure class="snip1205 gray">
+                    <img class="linkedin-image" src="../hack/partifulai-linkedin.jpg" alt="tmp">
+                    <i class="ion-search"></i>
+                    <a
+                        onclick="navigateToURL('https://www.linkedin.com/posts/tanmesh_partifulai-activity-7167727476306108416-A1H-/')"></a>
+                </figure>
         </section>
 
         <footer></footer>
